@@ -1,0 +1,12 @@
+Below is an explanation of the format of the instance definitions
+
+NUMBER OF VEHICLES          CAPACITY        SPEED(NOT USED)
+X                           Q               S
+
+CUST.     X     Y     DEMAND    EARLIEST PICKUP/DELIVERY TIME     LATEST PICKUP/DELEVERY TIME    SERVICE TIME  PICKUP(index to sibling)    DELIVERY(index to sibling)
+NO.
+
+0         x0    y0    q0        e0                                 l0                             s0            p0                          d0
+
+Customer 0 is the depot.  For pickup orders, the PICKUP index is 0, whereas the DELIVERY sibling gives the index of the corresponding delivery order.
+For delivery orders, the PICKUP index gives the index of the corresponding pickup order.
